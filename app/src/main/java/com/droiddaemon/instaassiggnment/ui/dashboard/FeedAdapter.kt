@@ -1,5 +1,6 @@
 package com.droiddaemon.instaassiggnment.ui.dashboard
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -29,8 +30,9 @@ class FeedAdapter() :
             return oldItem == newItem
         }
 
+        @SuppressLint("DiffUtilEquals")
         override fun areContentsTheSame(oldItem: Image, newItem: Image): Boolean {
-            return oldItem.toString() == newItem.toString()
+            return oldItem.toString() === newItem.toString()
         }
 
     }

@@ -1,5 +1,6 @@
 package com.droiddaemon.instaassiggnment.ui.dashboard.stories
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +19,8 @@ class StoriesAdapter : ListAdapter<Tag, StoriesAdapter.StoriesViewHolder>(Storie
 
     private class StoriesDiffCallback : DiffUtil.ItemCallback<Tag>() {
         override fun areItemsTheSame(oldItem: Tag, newItem: Tag) = (oldItem == newItem)
-        override fun areContentsTheSame(oldItem: Tag, newItem: Tag) = (oldItem == newItem)
+        @SuppressLint("DiffUtilEquals")
+        override fun areContentsTheSame(oldItem: Tag, newItem: Tag) = (oldItem === newItem)
 
     }
 
