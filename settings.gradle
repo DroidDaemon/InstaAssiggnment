@@ -1,0 +1,3 @@
+include ':libApi'
+include ':app'
+rootProject.name = "InstaAssiggnment"

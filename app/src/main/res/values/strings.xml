@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InstaAssiggnment</string>
+    <string name="title_hot">Hot</string>
+    <string name="title_top">Top</string>
+    <string name="title_activity_story">StoryActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

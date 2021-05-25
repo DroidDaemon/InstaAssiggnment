@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_hot">
+
+    <fragment
+        android:id="@+id/navigation_hot"
+        android:name="com.droiddaemon.instaassiggnment.ui.dashboard.FeedListFragment"
+        android:label="@string/title_hot"
+        tools:layout="@layout/feed_list_fragment">
+        <argument app:argType="string" android:name="feed" android:defaultValue="hot"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_top"
+        android:name="com.droiddaemon.instaassiggnment.ui.dashboard.FeedListFragment"
+        android:label="@string/title_top"
+        tools:layout="@layout/feed_list_fragment">
+
+        <argument app:argType="string" android:name="feed" android:defaultValue="top"/>
+    </fragment>
+
+
+</navigation>

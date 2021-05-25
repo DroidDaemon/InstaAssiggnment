@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/story_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+</androidx.viewpager2.widget.ViewPager2>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_transparent"
+        android:layout_marginTop="8dp"
+        />
+    <View
+        android:id="@+id/progressBar"
+        android:scaleX="0"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="left"
+        />
+
+</FrameLayout>
